@@ -1,0 +1,16 @@
+# contents of docker-compose.yml
+version: '3'
+services:
+  pg9:
+    image: postgres:14.5
+    ports:
+      - 5961:5432
+    environment:
+      POSTGRES_DB: project-x
+
+  pg10:
+    image: postgres:15.0
+    ports:
+      - 5105:5432
+    environment:
+      POSTGRES_DB: project-y
